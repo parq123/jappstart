@@ -1,0 +1,7 @@
+#summary The source code repository.
+
+= Details =
+
+Please see GitHub for the source code (http://github.com/tleese22/jappstart).
+
+git://github.com/tleese22/jappstart.git
