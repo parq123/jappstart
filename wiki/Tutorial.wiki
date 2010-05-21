@@ -1,2 +1,11 @@
 #labels installation,tutorial
-Coming soon.
+===Quick Start Guide===
+
+Configure the following properties in filter-local.properties, filter-dev.properties, and filter-prod.properties:
+  # google.app.id=enterId
+  # google.jsapi.http.key=enterKey
+  # google.jsapi.https.key=enterKey
+
+_Note: jsapi keys can be obtained [http://code.google.com/apis/ajaxlibs/documentation/index.html#sign_up_for_an_api_key here]._
+
+Complete tutorial coming soon.
