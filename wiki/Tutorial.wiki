@@ -11,4 +11,4 @@ Optionally:
 
 Notes: 
   # jsapi keys can be obtained [http://code.google.com/apis/ajaxlibs/documentation/index.html#sign_up_for_an_api_key here].
-  # The base package can be set at build-time via the following: <context:component-scan base-package="${application.package}" />. This is not configured to use the property name by default since Spring Tools Suite (STS) appears to not be able to handle properties in the component-scan tag (see issue [https://issuetracker.springsource.com/browse/STS-967 here]).
+  # The base package can be set at build-time via the following: <context:component-scan base-package="${application.package}" />. This is not configured to use the property name by default since Spring Tools Suite (STS) appears to not be able to handle properties in the component-scan tag and will display an error in Eclipse (see issue [https://issuetracker.springsource.com/browse/STS-967 here]).
