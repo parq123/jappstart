@@ -1,10 +1,10 @@
 #labels installation,tutorial
 ===Getting Started Guide===
 
-Configure the following properties in filter-local.properties, filter-dev.properties, and filter-prod.properties:
-  # google.app.id=enterId
-  # google.jsapi.http.key=enterKey
-  # google.jsapi.https.key=enterKey
+  # Configure the following properties in filter-local.properties, filter-dev.properties, and filter-prod.properties:
+    * google.app.id=enterId
+    * google.jsapi.http.key=enterKey
+    * google.jsapi.https.key=enterKey
   # Create a settings.xml file in your local .m2 folder:
 {{{
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
@@ -14,9 +14,9 @@ Configure the following properties in filter-local.properties, filter-dev.proper
   
     <servers>
         <server>
-            <id>yourapp.com</id> <!-- this should match the google.app.id property -->
-            <username>you@yourapp.com</username>
-            <password>yourpass</password>
+            <id>yourapp.com</id> <!-- this should match the google.app.id property and is the GAE application name -->
+            <username>you@yourapp.com</username> <!-- GAE username -->
+            <password>yourpass</password> <!-- GAE password -->
         </server>    
     </servers>
 
