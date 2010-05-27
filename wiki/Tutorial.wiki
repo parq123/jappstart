@@ -1,5 +1,5 @@
 #labels installation,tutorial
-===Quick Start Guide===
+===Getting Started Guide===
 
 Configure the following properties in filter-local.properties, filter-dev.properties, and filter-prod.properties:
   # google.app.id=enterId
