@@ -5,6 +5,23 @@ Configure the following properties in filter-local.properties, filter-dev.proper
   # google.app.id=enterId
   # google.jsapi.http.key=enterKey
   # google.jsapi.https.key=enterKey
+  # Create a settings.xml file in your local .m2 folder:
+{{{
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+        http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  
+    <servers>
+        <server>
+            <id>yourapp.com</id> <!-- this should match the google.app.id property -->
+            <username>you@yourapp.com</username>
+            <password>yourpass</password>
+        </server>    
+    </servers>
+
+</settings>
+}}}
 Optionally:
   # Configure application.package in filter-local.properties, filter-dev.properties, and filter-prod.properties to your desired package name.
   # Configure <context:component-scan base-package="your.package" /> in both dispatcher-servlet.xml and applicationContext.xml to match your package name (see note 2 below).
