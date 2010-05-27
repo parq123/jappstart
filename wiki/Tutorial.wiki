@@ -6,9 +6,9 @@ Configure the following properties in filter-local.properties, filter-dev.proper
   # google.jsapi.http.key=enterKey
   # google.jsapi.https.key=enterKey
 Optionally:
-  # configure application.package in filter-local.properties, filter-dev.properties, and filter-prod.properties to your desired package name
-  # configure <context:component-scan base-package="your.package" /> in both dispatcher-servlet.xml and applicationContext.xml to match your package name (also, see note 2 below)
+  # Configure application.package in filter-local.properties, filter-dev.properties, and filter-prod.properties to your desired package name
+  # Configure <context:component-scan base-package="your.package" /> in both dispatcher-servlet.xml and applicationContext.xml to match your package name (also, see note 2 below)
 
-_Notes: 
+Notes: 
   # jsapi keys can be obtained [http://code.google.com/apis/ajaxlibs/documentation/index.html#sign_up_for_an_api_key here]
-  # the base package can be set at build-time via the following. This is not configured to use the property name at default because Spring Tools Suite (STS) appears to not be able to handle properties in the component-scan tag (see issue [https://issuetracker.springsource.com/browse/STS-967 here]) <context:component-scan base-package="${application.package}" />_
+  # The base package can be set at build-time via the following: <context:component-scan base-package="${application.package}" />. This is not configured to use the property name by default since Spring Tools Suite (STS) appears to not be able to handle properties in the component-scan tag (see issue [https://issuetracker.springsource.com/browse/STS-967 here]).
