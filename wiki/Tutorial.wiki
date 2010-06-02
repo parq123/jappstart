@@ -24,6 +24,11 @@
 
 </settings>
 }}}
+  # Run _gae:unpack_ to place the google app engine sdk into your local .m2 repository
+  # Run _mvn clean compile -P local_ to create a new local build
+  # Run _mvn clean gae:run -P local_ to run the application locally
+  # Run _mvn clean gae:deploy -P dev_ to deploy to your dev app engine app
+  # Run _mvn clean gae:deploy -P prod_ to deploy to your prod app engine app
 
 Notes: 
   # jsapi keys can be obtained [http://code.google.com/apis/ajaxlibs/documentation/index.html#sign_up_for_an_api_key here].
