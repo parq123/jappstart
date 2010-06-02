@@ -26,7 +26,7 @@
 }}}
   # Run _gae:unpack_ to place the google app engine sdk into your local .m2 repository
   # Run _mvn clean compile -P local_ to create a new local build
-  # Run _mvn clean gae:run -P local_ to run the application locally
+  # Run _mvn clean gae:run -P local_ to run locally
   # Run _mvn clean gae:stop -P local_ to stop the local jetty server
   # Run _mvn clean gae:deploy -P dev_ to deploy to your dev app engine app
   # Run _mvn clean gae:deploy -P prod_ to deploy to your prod app engine app
