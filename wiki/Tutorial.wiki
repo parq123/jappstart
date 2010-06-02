@@ -16,7 +16,7 @@
   
     <servers>
         <server>
-            <id>yourapp.com</id> <!-- this should match the google.app.id property and is the GAE application name -->
+            <id>yourapp.com</id> <!-- this should match the google.app.id property and is the GAE application id -->
             <username>you@yourapp.com</username> <!-- GAE username -->
             <password>yourpass</password> <!-- GAE password -->
         </server>    
