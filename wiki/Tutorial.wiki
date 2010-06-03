@@ -33,4 +33,4 @@
 
 Notes: 
   # jsapi keys can be obtained [http://code.google.com/apis/ajaxlibs/documentation/index.html#sign_up_for_an_api_key here].
-  # To demonstrate the localization functionality just append the following to any url: _/some/url?locale=en_US_ or _/some/url?locale=tl_PH_. To support additional locales just create a new _messages_xx_YY.properties_ and you will see the verbiage once you include _/some/url?locale=xx_YY.
+  # To demonstrate the localization functionality just append the following to any url: _/some/url?locale=en_US_ or _/some/url?locale=tl_PH_. To support additional locales just create a new _messages_xx_YY.properties_ and set the new locale via _/some/url?locale=xx_YY_.
