@@ -37,5 +37,11 @@ Notes:
 
 ===Remote API/Bulk Loader Usage===
 Below is an example of how to use the Bulk Loader tool to copy all UserAccount entities from the production server to the local development server.
-  * Backup: bulkloader.py --dump --app_id=appid --url=http://appid.appspot.com/remote_api --kind=UserAccount --filename=backup.dat
-  * Restore: bulkloader.py --restore --app_id=local-appid --url=http://localhost:8080/remote_api --kind=UserAccount --filename=backup.dat
+  * Backup: 
+  {{{
+    bulkloader.py --dump --app_id=appid --url=http://appid.appspot.com/remote_api --kind=UserAccount --filename=backup.dat
+  }}}
+  * Restore:
+  {{{
+    bulkloader.py --restore --app_id=local-appid --url=http://localhost:8080/remote_api --kind=UserAccount --filename=backup.dat
+  }}}
