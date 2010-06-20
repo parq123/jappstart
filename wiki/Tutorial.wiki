@@ -36,7 +36,7 @@ Notes:
   # To demonstrate the localization functionality just append the following to any url: _/some/url?locale=en_US_ or _/some/url?locale=tl_PH_. To support additional locales just create a new _messages_xx_YY.properties_ and set the new locale via _/some/url?locale=xx_YY_.
 
 ===Remote API/Bulk Loader Usage===
-Below is an example of how to use the Bulk Loader tool to copy all user account entities from the production server to the local development server.
+Below is an example of how to use the Bulk Loader tool to copy all the user account entities from the production server to the local development server.
   * Backup: 
   {{{
     bulkloader.py --dump --app_id=appid --url=http://appid.appspot.com/remote_api --kind=UserAccount --filename=backup.dat
