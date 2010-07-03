@@ -43,5 +43,5 @@ Below is an example of how to use the Bulk Loader tool to copy all the user acco
   }}}
   * Restore:
   {{{
-    bulkloader.py --restore --app_id=local-appid --url=https://localhost:8080/remote_api --kind=UserAccount --filename=backup.dat
+    bulkloader.py --restore --app_id=appid --url=https://localhost:8080/remote_api --kind=UserAccount --filename=backup.dat
   }}}
