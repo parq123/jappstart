@@ -37,7 +37,7 @@ Notes:
 
 ===JRebel Usage===
   # Install [http://www.zeroturnaround.com/jrebel JRebel]
-  # Define REBEL_HOME environment variable
+  # Define a REBEL_HOME environment variable
   # Run _mvn clean gae:run -P local-jrebel_ to run locally with JRebel support
 
 ===Remote API/Bulk Loader Usage===
