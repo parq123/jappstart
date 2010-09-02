@@ -50,3 +50,6 @@ Below is an example of how to use the Bulk Loader tool to copy all the user acco
   {{{
     bulkloader.py --restore --app_id=appid --url=https://localhost:8080/remote_api --kind=UserAccount --filename=backup.dat
   }}}
+
+===Google Plugin for Eclipse Usage===
+  # See the [http://googlewebtoolkit.blogspot.com/2010/08/how-to-use-google-plugin-for-eclipse.html Google App Engine Blog].
