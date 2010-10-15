@@ -7,8 +7,9 @@
     * google.jsapi.https.key
     * application.hostname
     * mail.fromAddress
-  # Create a settings.xml file in your local .m2 folder. See [http://maven.apache.org/guides/mini/guide-encryption.html Maven - Password Encryption] for instructions on how to encrypt your GAE password.
+  # Create settings.xml and settings-security.xml files in your local .m2 folder. See [http://maven.apache.org/guides/mini/guide-encryption.html Maven - Password Encryption] for instructions on how to encrypt your GAE password.
 {{{
+<!-- settings.xml -->
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
@@ -18,11 +19,17 @@
         <server>
             <id>yourapp.com</id> <!-- this should match the google.app.id property and is the GAE application id -->
             <username>you@yourapp.com</username> <!-- GAE username -->
-            <password>yourpass</password> <!-- GAE password -->
+            <password>encryptedpass</password> <!-- Encrypted GAE password -->
         </server>    
     </servers>
 
 </settings>
+}}}
+{{{
+<!-- settings-security.xml -->
+<settingsSecurity>
+  <master>masterpass</master> <!-- Encrypted master password -->
+</settingsSecurity>
 }}}
   # Run _gae:unpack_ to place the google app engine sdk into your local .m2 repository
   # Run _mvn clean compile -P local_ to create a new local build
