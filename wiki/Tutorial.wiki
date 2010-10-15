@@ -28,7 +28,7 @@
 {{{
 <!-- settings-security.xml -->
 <settingsSecurity>
-  <master>masterpass</master> <!-- Encrypted master password -->
+    <master>masterpass</master> <!-- Encrypted master password -->
 </settingsSecurity>
 }}}
   # Run _gae:unpack_ to place the google app engine sdk into your local .m2 repository
