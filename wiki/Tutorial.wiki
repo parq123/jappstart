@@ -1,13 +1,13 @@
 #labels installation,tutorial,bulkloader,remoteapi
 ===Getting Started Guide===
 
-  # Configure the following properties in filter-local.properties, filter-dev.properties, and filter-prod.properties:
+  # Configure the following properties in filter-local.properties, filter-dev.properties, and filter-prod.properties.
     * google.app.id
     * google.jsapi.http.key
     * google.jsapi.https.key
     * application.hostname
     * mail.fromAddress
-  # Create a settings.xml file in your local .m2 folder. See [http://maven.apache.org/guides/mini/guide-encryption.html Maven - Password Encryption] for instructions on how to encrypt your GAE password:
+  # Create a settings.xml file in your local .m2 folder. See [http://maven.apache.org/guides/mini/guide-encryption.html Maven - Password Encryption] for instructions on how to encrypt your GAE password.
 {{{
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
