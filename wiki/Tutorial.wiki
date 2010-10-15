@@ -7,7 +7,7 @@
     * google.jsapi.https.key
     * application.hostname
     * mail.fromAddress
-  # Create settings.xml and settings-security.xml files in your local .m2 folder. See [http://maven.apache.org/guides/mini/guide-encryption.html Maven - Password Encryption] for instructions on how to encrypt your GAE password.
+  # Create a settings.xml and a settings-security.xml in your local .m2 folder. See [http://maven.apache.org/guides/mini/guide-encryption.html Maven - Password Encryption] for instructions on how to encrypt your GAE password.
 {{{
 <!-- settings.xml -->
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
