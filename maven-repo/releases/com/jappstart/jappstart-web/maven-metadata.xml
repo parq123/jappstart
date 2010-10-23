@@ -5,6 +5,7 @@
   <versioning>
     <release>1.9</release>
     <versions>
+      <version>1.16</version>
       <version>1.15</version>
       <version>1.14</version>
       <version>1.13</version>
@@ -22,6 +23,6 @@
       <version>1.8</version>
       <version>1.9</version>
     </versions>
-    <lastUpdated>20101023170209</lastUpdated>
+    <lastUpdated>20101023232420</lastUpdated>
   </versioning>
 </metadata>
