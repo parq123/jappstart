@@ -48,14 +48,14 @@ Notes:
   # Run _mvn clean gae:run -P local-jrebel_ to run locally with JRebel support
 
 ===Remote API/Bulk Loader Usage===
-Below is an example of how to use the Bulk Loader tool to copy all the user account entities from the production server to the local development server.
+Below is an example of how to use the Bulk Loader tool to copy all the user account entities from the production server to the local development server. Omit the --kind option to dump/restore all kinds.
   * Backup: 
   {{{
-    bulkloader.py --dump --app_id=appid --url=https://appid.appspot.com/remote_api --kind=UserAccount --filename=backup.dat
+    bulkloader.py --dump --application=appid --url=https://appid.appspot.com/remote_api --kind=UserAccount --filename=backup.dat
   }}}
   * Restore:
   {{{
-    bulkloader.py --restore --app_id=appid --url=https://localhost:8080/remote_api --kind=UserAccount --filename=backup.dat
+    bulkloader.py --restore --application=appid --url=http://localhost:8080/remote_api --kind=UserAccount --filename=backup.dat
   }}}
 
 ===Google Plugin for Eclipse Usage===
