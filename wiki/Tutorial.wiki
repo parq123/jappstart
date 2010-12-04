@@ -35,8 +35,8 @@
   # Run _mvn clean compile -P local_ to create a new local build
   # Run _mvn clean gae:run -P local_ to run locally
   # Run _mvn gae:stop -P local_ to stop the local jetty server
-  # Run _mvn clean gae:deploy -P dev_ to deploy to your dev app engine app
-  # Run _mvn clean gae:deploy -P prod_ to deploy to your prod app engine app
+  # Run _mvn clean gae:deploy -P dev_ to deploy to your dev app engine app (omit the clean for 0.7.4-SNAPSHOT of the Maven GAE Plugin)
+  # Run _mvn clean gae:deploy -P prod_ to deploy to your prod app engine app (omit the clean for 0.7.4-SNAPSHOT of the Maven GAE Plugin)
 
 Notes: 
   # jsapi keys can be obtained [http://code.google.com/apis/ajaxlibs/documentation/index.html#sign_up_for_an_api_key here].
