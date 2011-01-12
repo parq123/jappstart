@@ -31,12 +31,13 @@
     <master>masterpass</master> <!-- Encrypted master password -->
 </settingsSecurity>
 }}}
-  # Run _gae:unpack_ to place the google app engine sdk into your local .m2 repository
   # Run _mvn clean compile -P local_ to create a new local build
-  # Run _mvn clean gae:run -P local_ to run locally
+  # Run _mvn gae:run -P local_ to run locally
   # Run _mvn gae:stop -P local_ to stop the local jetty server
-  # Run _mvn clean gae:deploy -P dev_ to deploy to your dev app engine app
-  # Run _mvn clean gae:deploy -P prod_ to deploy to your prod app engine app
+  # Run _mvn clean compile -P dev_ to create a new dev build
+  # Run _mvn gae:deploy -P dev_ to deploy to your dev app engine app
+  # Run _mvn clean compile -P prod_ to create a new prod build
+  # Run _mvn gae:deploy -P prod_ to deploy to your prod app engine app
 
 Notes: 
   # jsapi keys can be obtained [http://code.google.com/apis/ajaxlibs/documentation/index.html#sign_up_for_an_api_key here].
@@ -45,7 +46,8 @@ Notes:
 ===JRebel Usage===
   # Install the [http://www.zeroturnaround.com/jrebel/early-access/ JRebel Nightly Build].
   # Define a REBEL_HOME environment variable
-  # Run _mvn clean gae:run -P local-jrebel_ to run locally with JRebel support
+  # Run _mvn clean compile -P local_ to create a new local build
+  # Run _mvn gae:run -P local-jrebel_ to run locally with JRebel support
 
 ===Remote API/Bulk Loader Usage===
 Below is an example of how to use the Bulk Loader tool to copy all the user account entities from the production server to the local development server. Omit the "--kind" option to dump/restore all kinds.
