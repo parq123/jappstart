@@ -31,12 +31,12 @@
     <master>masterpass</master> <!-- Encrypted master password -->
 </settingsSecurity>
 }}}
-  # Run _mvn clean compile -P local_ to create a new local build
+  # Run _mvn clean package -P local_ to create a new local build
   # Run _mvn gae:run -P local_ to run locally
   # Run _mvn gae:stop -P local_ to stop the local jetty server
-  # Run _mvn clean compile -P dev_ to create a new dev build
+  # Run _mvn clean package -P dev_ to create a new dev build
   # Run _mvn gae:deploy -P dev_ to deploy to your dev app engine app
-  # Run _mvn clean compile -P prod_ to create a new prod build
+  # Run _mvn clean package -P prod_ to create a new prod build
   # Run _mvn gae:deploy -P prod_ to deploy to your prod app engine app
 
 Notes: 
