@@ -6,7 +6,7 @@
     * google.jsapi.http.key
     * google.jsapi.https.key
     * application.hostname
-    * mail.fromAddress (see [http://code.google.com/appengine/docs/java/mail/overview.html#Sending_Mail Sending Mail] for details regarding from address restrictions) 
+    * mail.fromAddress (see [http://code.google.com/appengine/docs/java/mail/overview.html#Sending_Mail Sending Mail] for details regarding e-mail address restrictions) 
   # Create a settings.xml and a settings-security.xml in your local .m2 folder. See [http://maven.apache.org/guides/mini/guide-encryption.html Maven - Password Encryption] for instructions on how to encrypt your GAE password.
 {{{
 <!-- settings.xml -->
