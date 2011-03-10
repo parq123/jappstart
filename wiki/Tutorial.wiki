@@ -57,7 +57,7 @@ Below is an example of how to use the bulk loader to copy all data from the prod
   }}}
   * Restore:
   {{{
-    appcfg.py upload_data --kind=UserAccount --url=http://localhost:8080/remote_api --filename=backup.dat
+    appcfg.py upload_data --application=<app-id> --kind=UserAccount --url=http://localhost:8080/remote_api --filename=backup.dat
   }}}
 
 ===Google Plugin for Eclipse Usage===
