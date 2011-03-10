@@ -50,7 +50,7 @@ Notes:
   # Run _mvn gae:run -P local-jrebel_ to run locally with JRebel support
 
 ===Remote API/Bulk Loader Usage===
-Below is an example of how to use the Bulk Loader tool to copy all data from the production server to the local development server. Omit the "--kind" option to dump/restore all kinds. See [http://code.google.com/appengine/docs/python/tools/uploadingdata.html this] for more info.
+Below is an example of how to use the bulk loader to copy all data from the production server to the local development server. Omit the "--kind" option to dump/restore all kinds. See [http://code.google.com/appengine/docs/python/tools/uploadingdata.html this] for more info.
   * Backup: 
   {{{
     appcfg.py download_data --application=<app-id> --kind=UserAccount --url=https://<app-id>.appspot.com/remote_api --filename=backup.dat
